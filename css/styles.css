@@ -1,4 +1,4 @@
-/* Header */
+/* Estilos para o cabeçalho */
 header {
   background-color: #ffffff;
   width: 100%;
@@ -9,7 +9,6 @@ header {
   position: sticky;
   z-index: 100;
 }
-
 
 .logo {
   color: rgba(0, 0, 0, 0.815);
@@ -25,33 +24,7 @@ header {
   width: 100%;
 }
 
-.certificados {
-  background-color: black;
-}
-
-.sobre img[src="img/facebook_logo.jpg"] {
-  width: 18%; 
-  float:left;
-  
-}
-
-.sobre img[src="img/fei_logo.jpg"] {
-  width: 15%; 
-  float:left;
-  margin-top:4%;
-  margin-right:2%;
-  margin-left:1%;
-}
-
-.exibir {
-  background-color: white;
-  border-radius: 20px;
-  color: gray;
-  float:left;
-  margin-left: 18%;
-}
-
-/* Body */
+/* Estilos para o corpo */
 body {
   margin: 0;
   padding: 0;
@@ -106,6 +79,8 @@ span {
   margin-top: 5%;
 }
 
+
+
 .separador {
   border: none;
   height: 3px;
@@ -132,7 +107,6 @@ a, p, h2 {
   line-height: 115%;
 }
 
-
 .fundo h1 {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -143,14 +117,38 @@ a, p, h2 {
   margin-left: 400px;
 }
 
+.certificados {
+  background-color: black;
+}
+
+.sobre img[src="img/facebook_logo.jpg"] {
+  width: 18%; 
+  float: left;
+}
+
+.sobre img[src="img/fei_logo.jpg"] {
+  width: 15%; 
+  float: left;
+  margin-top: 4%;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+
+.exibir {
+  background-color: white;
+  border-radius: 20px;
+  color: gray;
+  float: left;
+  margin-left: 18%;
+}
+
 .menu {
-  padding-left:60%;
+  padding-left: 60%;
   width: 100%;
 }
 
-.menu a{
-  font-size:17px;
-  
+.menu a {
+  font-size: 17px;
 }
 
 nav {
@@ -183,13 +181,12 @@ li > a:hover {
   color: #58119bb2;
 }
 
-/* Rodapé */
-
+/* Estilos para o rodapé */
 .icons {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 20px;
+  margin: 1%;
 }
 
 .icon-link {
@@ -231,7 +228,7 @@ footer {
   margin: 0;
 }
 
-/* Button */
+/* Estilos para os botões */
 button {
   background-color: rgb(59, 144, 194);
   color: #ffffff;
