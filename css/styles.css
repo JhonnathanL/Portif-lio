@@ -8,7 +8,6 @@ header {
   align-items: center;
   position: sticky;
   z-index: 100;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -26,6 +25,32 @@ header {
   width: 100%;
 }
 
+.certificados {
+  background-color: black;
+}
+
+.sobre img[src="img/facebook_logo.jpg"] {
+  width: 18%; 
+  float:left;
+  
+}
+
+.sobre img[src="img/fei_logo.jpg"] {
+  width: 15%; 
+  float:left;
+  margin-top:4%;
+  margin-right:2%;
+  margin-left:1%;
+}
+
+.exibir {
+  background-color: white;
+  border-radius: 20px;
+  color: gray;
+  float:left;
+  margin-left: 18%;
+}
+
 /* Body */
 body {
   margin: 0;
@@ -34,7 +59,7 @@ body {
 }
 
 .fundo {
-  width: 60%;
+  max-width: 60%;
   height: 650px;
   background: linear-gradient(to top, rgba(31, 28, 201, 0.396), #82e7f5);
   border-radius: 30px;
@@ -104,6 +129,7 @@ a, p, h2 {
   color: rgba(0, 0, 0, 0.815);
   filter: blur(0.4px);
   text-align: left;
+  line-height: 115%;
 }
 
 
@@ -157,7 +183,25 @@ li > a:hover {
   color: #58119bb2;
 }
 
-/* Footer */
+/* Rodapé */
+
+.icons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.icon-link {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.icon-link img {
+  width: 50px; 
+  height: 50px; 
+}
+
 footer {
   line-height: 100px;
   text-align: center;
