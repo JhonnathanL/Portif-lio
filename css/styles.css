@@ -244,6 +244,7 @@ button {
 button:hover {
   background-color: #29739c;
   cursor: pointer;
+  color:white;
 }
 
 .links {
