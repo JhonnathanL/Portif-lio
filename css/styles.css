@@ -33,26 +33,42 @@ body {
 
 .fundo {
   max-width: 60%;
-  height: 650px;
+  height: 500px;
   background: linear-gradient(to top, rgba(31, 28, 201, 0.396), #82e7f5);
   border-radius: 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 5%;
+  align-items: left;
+  padding: 5%;
 }
 
 .fundo h1 {
-  font-size: 450%;
+  font-size: 4.5em; 
   margin: 0;
+  margin-top: 5%;
 }
 
 .fundo > p, .texto {
-  font-size: 150%;
+  font-size: 1.5em; 
   color: rgba(0, 0, 0, 0.815);
   filter: blur(0.4px);
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .fundo {
+    max-width: 80%; 
+    height: auto; 
+  }
+
+  .fundo h1 {
+    font-size: 2.5em; 
+  }
+
+  .fundo > p, .texto {
+    font-size: 1.2em; 
+  }
 }
 
 .texto {
@@ -76,9 +92,8 @@ span {
   font-size: 28px;
   color: rgba(0, 0, 0, 0.815);
   filter: blur(0.4px);
-  margin-top: 5%;
+  margin-top: 6%;
 }
-
 
 
 .separador {
@@ -126,13 +141,15 @@ a, p, h2 {
   float: left;
 }
 
-.sobre img[src="img/fei_logo.jpg"] {
+.sobre img[src="img/fei_logo.jpg"],img[src="img/finnet.png"],img[src="img/koppert.png"] {
   width: 15%; 
   float: left;
   margin-top: 4%;
   margin-right: 2%;
   margin-left: 1%;
 }
+
+
 
 .exibir {
   background-color: white;
@@ -228,6 +245,49 @@ footer {
   margin: 0;
 }
 
+.habilidades-lista li {
+  background-color: #e0e0e0;
+  border: 1px solid #ddd;
+  border-radius: 12%;
+  padding: 3%;
+  width: 15%;
+  font-size: 110%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #4b4545;
+  font-weight: bold;
+  text-align: center;
+}
+
+.experiencia-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
+.experiencia-lista li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12%;
+  padding: 2%;
+  width: 11%;
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.experiencia-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
 /* Estilos para os botões */
 button {
   background-color: rgb(59, 144, 194);
@@ -252,15 +312,4 @@ button:hover {
   font-size: 18px;
 }
 
-.habilidades-lista li {
-  background-color: #e0e0e0;
-  border: 1px solid #ddd;
-  border-radius: 12%;
-  padding: 3%;
-  width: 15%;
-  font-size: 110%;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #4b4545;
-  font-weight: bold;
-  text-align: center;
-}
+
