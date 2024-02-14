@@ -12,16 +12,44 @@ header {
 
 .logo {
   color: rgba(0, 0, 0, 0.815);
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  margin: 0;
+  margin: 10px 0;
   display: flex;
   align-items: center;
 }
 
-.coluna img {
-  width: 100%;
+.logo img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.logo p {
+  font-weight: bold;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu p {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.815);
+  font-size: 18px;
 }
 
 /* Estilos para o corpo */
@@ -44,13 +72,14 @@ body {
 }
 
 .fundo h1 {
-  font-size: 4.5em; 
+  font-size: 4.5em;
   margin: 0;
   margin-top: 5%;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .fundo > p, .texto {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   color: rgba(0, 0, 0, 0.815);
   filter: blur(0.4px);
   margin: 0;
@@ -58,16 +87,16 @@ body {
 
 @media (max-width: 768px) {
   .fundo {
-    max-width: 80%; 
-    height: auto; 
+    max-width: 80%;
+    height: auto;
   }
 
   .fundo h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
   }
 
   .fundo > p, .texto {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 }
 
@@ -95,7 +124,6 @@ span {
   margin-top: 6%;
 }
 
-
 .separador {
   border: none;
   height: 3px;
@@ -122,10 +150,6 @@ a, p, h2 {
   line-height: 115%;
 }
 
-.fundo h1 {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
 #foto {
   height: 60px;
   border-radius: 50px;
@@ -137,19 +161,17 @@ a, p, h2 {
 }
 
 .sobre img[src="img/facebook_logo.jpg"] {
-  width: 18%; 
+  width: 18%;
   float: left;
 }
 
-.sobre img[src="img/fei_logo.jpg"],img[src="img/finnet.png"],img[src="img/koppert.png"] {
-  width: 15%; 
+.sobre img[src="img/fei_logo.jpg"], img[src="img/finnet.png"], img[src="img/koppert.png"] {
+  width: 15%;
   float: left;
   margin-top: 4%;
   margin-right: 2%;
   margin-left: 1%;
 }
-
-
 
 .exibir {
   background-color: white;
@@ -160,7 +182,7 @@ a, p, h2 {
 }
 
 .menu {
-  padding-left: 60%;
+  padding-left: 40%;
   width: 100%;
 }
 
@@ -194,7 +216,7 @@ li > a, .logo a {
   letter-spacing: 1px;
 }
 
-li > a:hover {
+li p:hover {
   color: #58119bb2;
 }
 
@@ -212,8 +234,8 @@ li > a:hover {
 }
 
 .icon-link img {
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
 }
 
 footer {
@@ -227,6 +249,7 @@ footer {
 
 .sobre {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .coluna {
@@ -234,6 +257,14 @@ footer {
   padding-top: 4%;
   padding-left: 14%;
   padding-right: 10%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .coluna {
+    flex: 100%;
+    padding: 4% 0;
+  }
 }
 
 .habilidades-lista {
@@ -278,16 +309,6 @@ footer {
   text-align: center;
 }
 
-
-.experiencia-lista {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0;
-}
-
 /* Estilos para os botões */
 button {
   background-color: rgb(59, 144, 194);
@@ -304,12 +325,10 @@ button {
 button:hover {
   background-color: #29739c;
   cursor: pointer;
-  color:white;
+  color: white;
 }
 
 .links {
   color: darkblue;
   font-size: 18px;
 }
-
-
