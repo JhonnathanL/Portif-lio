@@ -255,8 +255,8 @@ footer {
 .coluna {
   flex: 1;
   padding-top: 4%;
-  padding-left: 14%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 1%;
   box-sizing: border-box;
 }
 
