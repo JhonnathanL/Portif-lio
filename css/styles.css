@@ -216,7 +216,7 @@ li > a, .logo a {
   letter-spacing: 1px;
 }
 
-li p:hover {
+header li p:hover {
   color: #58119bb2;
 }
 
@@ -256,7 +256,7 @@ footer {
   flex: 1;
   padding-top: 4%;
   padding-left: 14%;
-  padding-right: 10%;
+  padding-right: 4%;
   box-sizing: border-box;
 }
 
@@ -302,7 +302,7 @@ footer {
   border: 1px solid #ddd;
   border-radius: 12%;
   padding: 2%;
-  width: 11%;
+  width: 12%;
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
