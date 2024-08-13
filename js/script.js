@@ -9,14 +9,15 @@ window.addEventListener("scroll", function () {
 });
 
 $(document).ready(function () {
-  $('a[href^="#"]').on('click', function (event) {
-     event.preventDefault();
-     var offset = 200;
+  $('a[href^="#"]').on("click", function (event) {
+    event.preventDefault();
+    var offset = 200;
 
-     $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top - offset
-     }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - offset,
+      },
+      1000
+    );
   });
 });
-
-
