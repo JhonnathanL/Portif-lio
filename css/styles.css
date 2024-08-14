@@ -32,7 +32,7 @@ header {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.815);
   font-size: 140%;
-  transition: 0.4s;
+  transition: 0.4s ease-in-out;
 }
 
 /* Estilos para o corpo */
@@ -48,7 +48,11 @@ body {
 }
 
 .fundo {
-  background: linear-gradient(to right, rgba(166, 195, 208, 0.748), rgba(96, 176, 213, 0.748));
+  background: linear-gradient(
+    to right,
+    rgba(166, 195, 208, 0.748),
+    rgba(96, 176, 213, 0.748)
+  );
   border-radius: 20px;
   margin: auto;
   display: flex;
@@ -56,6 +60,11 @@ body {
   flex-direction: column;
   align-items: left;
   padding: 7% 15% 7% 15%;
+  transition: 0.5s ease-in-out;
+}
+
+.fundo:hover {
+  scale: 1.02;
 }
 
 .fundo h1 {
@@ -120,7 +129,7 @@ span {
 .separador {
   border: none;
   height: 3px;
-  background-color: purple;
+  background-color: rgb(0, 109, 128);
   margin: 20px auto;
   width: 5%;
   border-radius: 30%;
@@ -212,7 +221,7 @@ li > a,
 }
 
 header li p:hover {
-  color: #11799bb2;
+  color: rgba(96, 176, 213, 0.748);
   scale: 1.1;
 }
 
@@ -292,7 +301,7 @@ footer {
 
 .habilidades-lista li:hover {
   scale: 1.1;
-  background-color: #498cdd;
+  background-color: rgba(96, 176, 213, 0.748);
   cursor: pointer;
   color: white;
 }
@@ -320,7 +329,7 @@ footer {
 
 .experiencia-lista li:hover {
   scale: 1.1;
-  background-color: #173458;
+  background-color: rgba(96, 176, 213, 0.748);
   cursor: pointer;
   color: white;
 }
@@ -335,11 +344,11 @@ button {
   font-family: sans-serif;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border: 1px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #29739c;
+  background-color: rgba(96, 176, 213, 0.748);
   cursor: pointer;
   color: white;
 }
